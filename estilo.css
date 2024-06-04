@@ -1,0 +1,470 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+
+
+
+
+
+
+:root{/* Hace referencia al objeto html */
+    --color1: #001542;
+    --color2: #085454;
+    --color3: #7A7A7A;
+    --color4: #FFFFFF;
+    --color5: #FFB30D;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-claro: #CCCCCC;
+    --color-gris-oscuro: #333333;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+  
+
+
+
+body {
+
+    margin: 0px;
+    
+    padding: 0px;
+    
+    /*font-family: sans-serif; NO AGREGAR EN CASO DE PONER UN FONT DE GOOGLE*/
+    
+}
+    
+
+
+img {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 200;
+    letter-spacing: -4px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#top-header{/*agregar 0000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+    background-color: var(--color2);
+    color: var(--color-blanco);
+    padding: 10px 0;
+    text-align: center;/*acomdar texto al centro*/
+
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+#main-banner-moda {
+    position: absolute;
+    bottom: 30px;
+    
+    color: var(--color-negro);
+    width: 50%;
+    /* left: 25%; */
+    padding: 80px;
+    box-sizing: border-box;
+    }
+
+
+#logo-ripley {
+
+    display: flex; 
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    
+}
+
+
+#container {
+    
+
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;/*acomoda texto cerca a la izquierda con ligero espacio*/
+    padding-right: 15px;/*acomoda texto cerca a la derecha con ligero espacio*/
+
+
+}
+
+#menu {
+
+    flex-grow: 1;
+    
+    flex-basis: 50%;
+    
+    align-items: center;
+    
+    }
+    
+    #menu > ul {
+    
+    display: flex;
+    
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    
+    align-items: center;
+    
+    justify-content: center;
+    
+    list-style-type: none;
+    
+    
+    height: 100%;
+}
+
+
+#menu a {
+
+    color: darkslategrey;
+        
+    text-transform: uppercase;
+        
+    text-decoration: none;
+        
+    padding: 10px;
+        
+}
+        
+#menu a:hover {
+        
+    background-color: rgb(255, 198, 10);
+        
+    color: rgb(0, 0, 0);
+        
+}
+
+
+#menu1 {
+
+    flex-grow: 1;
+    
+    flex-basis: 50%;
+    
+    align-items: center;
+    
+    }
+    
+    #menu1 > ul {
+    
+    display: flex;
+    
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    
+    align-items: center;
+    
+    justify-content: flex-start;
+    
+    list-style-type: none;
+    
+    
+    height: 100%;
+}
+
+
+#menu1 a {
+
+    color: var(--color-blanco);
+        
+    text-transform: uppercase;
+        
+    text-decoration: none;
+        
+    padding: 10px;
+        
+}
+        
+#menu1 a:hover {
+        
+    background-color: rgb(255, 198, 10);
+        
+    color: rgb(0, 0, 0);
+        
+}
+
+#colaboradores img{
+    border-radius: 50%;
+
+    
+}
+
+.padded{/* Regla de estilos para una clase (Empieza con punto) (90px normalmente en top y bottom)  */
+    padding-top: 45px;/* padding es la distancia del borde al contenido, AGREGAR EN CASI TODO LOS CONTENIDOS AL INICIO*/
+    padding-bottom: 45px;
+}
+
+.row{
+    display: flex; /* Acomoda los objetos que contiene por defecto 
+    uno al costado de otro */
+    margin-left: -15px;
+    /*margin-right: -15px;*/
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 0; 
+    flex-grow: 1;
+    /* Con ambas propiedades las cajas tienen el mismo ancho */
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    box-sizing: border-box; /* Para que el padding no incremente el ancho (en este caso) */
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    }
+
+
+
+
+#contenido {
+
+    height: 200px;
+    
+    overflow-y: scroll;
+    
+    }
+
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.pelicula {
+
+    background-color: lightskyblue;
+    
+    margin: 5px;
+    
+    padding: 5px;
+    
+    text-align: center;
+    
+    flex-basis: 300px;
+    
+    }
+
+
+#codigo-descuento{/*agregar 0000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+    background-color: var(--color5);
+    color: var(--color-negro);
+    padding: 10px 0;
+    text-align: center;/*acomdar texto al centro*/
+    
+}
+
+#noticias .col{
+    border: 1px solid var(--color3);
+    padding-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.1);/*bordes de linea de los marcos*/
+}
+
+#noticias img{
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+#noticias .contenedor-boton{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#noticias h3{
+    /*background: linear-gradient(90deg, var(--color1), var(--color-blanco)); , color degrado*/
+    -webkit-background-clip: text;
+    background-clip: text; 
+    /*color: transparent; ,color degrado*/
+}
+
+
+#noticias{
+
+    background-color: var(--color3);
+
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;/*acomoda texto cerca a la izquierda con ligero espacio*/
+    padding-right: 15px;/*acomoda texto cerca a la derecha con ligero espacio*/
+
+}
+
+a{
+    color: var(--color2);
+    text-decoration: none;/* Para que le hipervínculo no se subraye */
+}
+a:hover{/* El estado hover ocurre al pasa el puntero del mouse sobre el objeto */
+    color: #FF0000;
+    text-decoration: underline;/* Para que se subraye */
+}
+
+
+
+
+
+
+
+.product-grid {
+    display: flex;
+    gap: 10px; /*espacio entre cuadros*/
+        /* justify-content: space-between; */
+
+}
+.product-card {
+    /*width: 200px;*/
+    border: 1px solid #000; /*borde de caja*/
+    padding: 0px;
+    text-align: center;
+
+    border-radius: 10px;
+    overflow: hidden;/* acomoda para que no se salgan de su cuadro las imagenes IMPORTANTE*/
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);/*sombreado de los cuadros */
+    
+}
+
+.product-name {
+    font-size: 20px;
+    color: #000;
+}
+.product-price {
+    font-size: 18px;
+    color: #008000;
+}
+.original-price {
+    font-size: 14px;
+    color: #808080;
+    text-decoration: line-through;
+}
+.discount {
+    font-size: 16px;
+    color: #FF0000;
+}
+.shipping {
+    font-size: 14px;
+    color: #0000FF;
+}
+
+#codigo-descuento2{/*agregar 0000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+    background-color: var(--color1);
+    color: var(--color-blanco);
+    padding: 10px;
+    text-align: center;/*acomdar texto al centro*/
+    
+}
+
+
+
+
+.dog {
+    display: flex;
+    justify-content: space-between;
+}
+.section {
+    width: 30%;
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+}
+.middle-section {
+    width: 200%;
+}
+.product-name {
+    font-size: 20px;
+    color: #000;
+}
+.product-price {
+    font-size: 18px;
+    color: #008000;
+}
+.original-price {
+    font-size: 14px;
+    color: #808080;
+    text-decoration: line-through;
+}
+.discount {
+    font-size: 16px;
+    color: #FF0000;
+}
+.rating {
+    font-size: 14px;
+    color: #0000FF;
+}
+
+#baners{
+
+
+    background-color: var(--color5);
+
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;/*acomoda texto cerca a la izquierda con ligero espacio*/
+    padding-right: 15px;/*acomoda texto cerca a la derecha con ligero espacio*/
+
+}
+
+#tablets{
+
+background-color: var(--color2);
+
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;/*acomoda texto cerca a la izquierda con ligero espacio*/
+padding-right: 15px;/*acomoda texto cerca a la derecha con ligero espacio*/
+
+}
